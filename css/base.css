@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC|Noto+Serif+SC|ZCOOL+KuaiLe|ZCOOL+QingKe+HuangYou|ZCOOL+XiaoWei');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /* font-family: 'Noto Sans SC', sans-serif; */
+    /* font-family: 'ZCOOL QingKe HuangYou', cursive; */
+    /* font-family: 'ZCOOL XiaoWei', serif;*/
+    font-family: 'ZCOOL KuaiLe', cursive;
+    /* font-family: 'Noto Serif SC', serif;  */
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    background-image: url('../images/bg.jpg');
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    background-color: rgba(0, 100, 130, .9);
+    text-align: center;
+}
+.container h2 {
+    width: 100%;
+    padding-top: 10vw;
+    font-size: 66px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px 6px orange;  /* 水平位移  垂直位移 模糊度 颜色 */
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;  /* (文字凸起效果)可以通过","添加多个阴影 */
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #fff;  /* (文字凹陷效果) */
+    color: #ccc;   /* 字体颜色放在text-shadow下面才生效 */
+}
+
+.container p {
+    font-family: 'Noto Sans SC', sans-serif;
+    color: #333;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container h2{
+        font-size: 4vw;
+    }
+}
